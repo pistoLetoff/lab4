@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hi</title>
+    <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/table.css">
+    <script type="text/javascript" src="scripts/TableModel.js"></script>
+    <script type="text/javascript" src="scripts/TableView.js"></script>
+    <script type="text/javascript" src="scripts/TableController.js"></script>
+    <script type="text/javascript" src="scripts/script.js"></script>
+</head>
+<body>
+    <header>
+        <p class="left-btn active">Make order</p>
+        <p class="right-btn">Manage the table</p>
+    </header>
+    <main>
+        <div class="small-container switching-container" style="flex:1">
+            <div id="order">
+                <p>Choose desire items from right</p>
+                <table id="order-table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Price</th>
+                            <th>Number</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+                    </tbody>
+                </table>
+                <p>Total cost: </p>
+                <div id="total-cost">
+                    
+                </div>
+            </div>
+            <div id="table-editor">
+                <form>
+                    <div class="form-text">Product:</div><input type="text" id="goods-table-input-product"><br>
+                    <div class="form-text">Price:</div><input type="text" id="goods-table-input-price"><br>
+                    <div class="btn-group">
+                        <div class="button" id="goods-table-btn-add">Add</div>
+                        <div class="button" id="goods-table-btn-delete">Delete&nbsp;row</div>
+                        <div class="button" id="goods-table-btn-edit">Edit&nbsp;row</div>
+                    </div>
+                    <p id="hint-edit" class="display-none">Click on cell and change value</p>
+                    <p id="hint-delete" class="display-none">Click on row to delete it</p>
+                </form>
+            </div>
+        </div>
+        <div id="table" class="small-container" style="flex:1">
+            <table id="goods-table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <footer>
+        Suldin Aleksandr 2018
+    </footer>
+</body>
+</html>
